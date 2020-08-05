@@ -85,7 +85,7 @@ void displayBasins() {
         roots.put(root, rootCount);
         rootCount ++;
       }
-      color col = colors[(roots.get(root) + 0) % colors.length];
+      color col = colors[roots.get(root) % colors.length];
       set(i, j, col);
     }
   }
